@@ -23,16 +23,32 @@
 
 
       // How do we print out every single student in Row 1?
+      // My answer: I actualy created an aaray within an arrat to print ALL students within each array. to full meet the expectation in line 25, I will start a new one on line 33
+      for (let i = 0; i < entireClass.length; i++) {
+        for (let k = 0; k < entireClass[i].length; k++) {
+          console.log(entireClass[i][k]);
+        }
+      }
+
+      // How do we print out every single student in Row 1?
+      // In this one, I've treated only index 0 in the entireClass array, and looped that index 0
+        // for (let i = 0; i < entireClass[0].length; i++) {
+        //   console.log(entireClass[0][i]);
+        // }    
 
 
       // How do we print out every student in Row 2 whose first name begins with J?
-
+      // for (let i = 0; i < studentsRow2.length; i++) {
+      //   if (studentsRow2[i][0] === "J") {
+      //     console.log(studentsRow2[i]);
+      //   }
+      // }
 
       // Using the entireClass array, how do we access the second student in row 3?
-
+      // console.log(entireClass[2][1])
 
       // Using the entireClass array, how do we access the third student in row 2?
-
+      // console.log(entireClass[1][2])
 
     </script>
     

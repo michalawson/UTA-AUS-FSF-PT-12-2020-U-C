@@ -6,36 +6,36 @@
   </head>
   <body>
 
-    <script type="text/javascript">
+   <script type="text/javascript">
 
-      // Here we ask the user if they eat steak, and store the result (true/false) in a variable.
-      var eatSteak = confirm("Do you eat steak?");
+// * Create a website (from scratch) that asks users if they eat steak.
 
-      // If the user eats steak (eatSteak === true) we run the following code block.
-      if (eatSteak) {
-        alert("Here's a steak");
-      }
-      // If the above condition isn't met (eatSteak !== true), run the following block of code instead.
-      else {
-        alert("Here's a tofu stir fry!");
-      }
+// * If they respond with "yes", alert the following to the page: "Here’s a Steak Sandwich!"
 
-      // Bonus
-      // Here we ask the user what year they were born, and store their response to a variable.
-      var birthYear = prompt("What year were you born?");
+    var userEatSteak = confirm("Do you eat staek?");
 
-      // If the user was born before 1997, alert "SAKE SAKE SAKE!"
-      if (birthYear < 1997) {
-        alert("SAKE SAKE SAKE!");
-      }
-      // Else if the user was born after 1997, alert "No Sake for you!"
-      else if (birthYear > 1997) {
-        alert("No Sake for you!");
-      }
-      // If neither of the previous conditions was true (birthYear === 1995) we alert "You inched by!"
-      else {
-        alert("You inched by! Sake Sake Sake!");
-      }
+    if (userEatSteak) {
+      alert("Here's a steak sandwich!");
+    }
+    else {
+      alert("Here's a tofu Stir-Fry!");
+    }
+
+
+    var userBirthYear = prompt("What year were you born?");
+    var drinkingAgeYear = (2021 - userBirthYear); 
+
+    if (drinkingAgeYear < 21) {
+      alert("No Sake for you!");
+    }
+    else {
+      alert("Enjoy some sake!");
+    }
+
+// * If they respond with "no", alert the following to the page: "Here’s a Tofu Stir-Fry!"
+
+// * **BONUS:** Ask what the user’s birth year is. If they are under 21, alert the following: "No Sake for you!"
+
 
     </script>
 

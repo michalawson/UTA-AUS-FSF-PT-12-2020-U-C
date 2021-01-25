@@ -11,21 +11,101 @@
       // Here we create our prompt and confirm variables which will store user input.
       var confirmSushi = confirm("Do you like sushi?");
       var confirmGingerTea = confirm("Do you like Ginger Tea?");
-      var sushiType = prompt("What kind of sushi do you like?");
+      // var sushiType = prompt("What kind of sushi do you like?");
 
       // If the user likes sushi (confirmSushi === true), we run the following block of code.
+      // if (confirmSushi) {
+      //   alert("You like " + sushiType + "!");
+      // }
+      // // If the user likes ginger tea (confirmGingerTea === true), we run the following block of code.
+      // else if (confirmGingerTea) {
+      //   alert("You like ginger tea!!");
+      // }
+      // // If neither of the previous condition were true, we run the following block of code.
+      // else {
+      //   alert("You don't like sushi or ginger tea.");
+      // }
+
+
+      // option below I've tried to check if I can avois else if and simply nest sub-condition for true and sub-condition for false.
+      // It worked and essentially I've cheked 2-TRUE and 2-FALSE to cover 4 scensrios:
+      // love sushi-love tea, love sushi-hate tea, hate sushi-love tea, hate sushi-hate tea
+      // if (confirmSushi) {
+      //   if (confirmGingerTea) {
+      //     alert("You like Sushi AND ginger tea!!");
+      //   }
+      //   else {
+      //     alert("You like sushi but you don't like ginger tea!");
+      //   }
+      // }
+      // else {
+      //   if (confirmGingerTea) {
+      //     alert("You don't like sushi but you like ginger tea!");
+      //   }
+      //   else {
+      //     alert("You don't like sushi or ginger tea.");
+      //   }
+      // }
+
+
+      // I've tried another option where the true of the sushi does not prompt alert until the tea is checked, though this code works, it's too wordy, so following this code, there's another workign code that works for the same concept but is cleaner. 
+      // if (confirmSushi) {
+      //   if (confirmGingerTea) {
+      //   }
+      //   else {
+      //     alert("You like sushi!");
+      //   }
+      // }
+      // else {
+      //   if (confirmGingerTea) {
+      //     alert("You like ginger tea!");
+      //   }
+      //   else {
+      //     alert("You don't like sushi or ginger tea.");
+      //   }
+      // }
+
+
+      
+      {
       if (confirmSushi) {
-        alert("You like " + sushiType + "!");
-      }
-      // If the user likes ginger tea (confirmGingerTea === true), we run the following block of code.
+        alert("You like sushi!");
+        }
       else if (confirmGingerTea) {
-        alert("You like ginger tea!!");
-      }
-      // If neither of the previous condition were true, we run the following block of code.
+          alert("You like ginger tea!");
+        }
       else {
-        alert("You don't like sushi or ginger tea.");
+          alert("You don't like sushi or ginger tea.");
+        }
       }
 
+
+      // some experimenting
+      // confirmSushi === false && confirmGingerTea === false; {
+      //   alert("You don't like sushi ot ginger tea.");
+      // }
+      //   console.log("You don't like sushi ot gonger tea.");
+        // alert("You don't like sushi or ginger tea.")
+        // console.log("You don't like sushi or ginger tea.")
+   
+      // confirmSushi || confirmGingerTea; {
+
+      // }
+
+
+     
+      // confirmSushi ||;
+      //   alert("You like sushi!");
+      //   }
+      // if (confirmGingerTea) {
+      //     alert("You like ginger tea!");
+      //   }
+      // else {
+      //     alert("You don't like sushi or ginger tea.");
+      //   }
+      // }
+
+        
     </script>
 
   </body>
