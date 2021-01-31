@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Location Redirect
+  </title>
+</head>
+<body>
+  <script type="text/javascript">
+    console.log(window.navigator.userAgent);
+    if (window.navigator.userAgent.includes("Mac")) {
+        console.log("User has Mac");
+        alert("Welcome Mac User!");
+    } else if (window.navigator.userAgent) {
+        console.log("User has Windows");
+        alert("Welcome Windows User!");
+    }
+
+    var successFn = function (position) {
+        console.log('Success!: ', position);
+    };
+    var errFn = function (err) {
+        console.log('Error!: ', err);
+    };
+
+    console.log(window.navigator.geolocation.getCurrentPosition(successFn, errFn));
+
+    // window.navigator.geolocation.getCurrentPosition(function(){
+    //     console.log(getGeolocationPosition);
+    // });
+  </script>
+</body>
+
+</html>
